@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+html,
+body,
+#root,
+main {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--on-surface);
+  background: linear-gradient(0deg, rgba(238, 255, 255, 1) 0%, rgba(255, 242, 254, 1) 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
