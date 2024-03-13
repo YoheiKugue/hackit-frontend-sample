@@ -1,9 +1,9 @@
 services:
-  hackit-sample:
+  hackit-frontend-sample:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: "hackit-sample"
+    container_name: "hackit-frontend-sample"
     ports:
       - "3000:3000"
     volumes:
@@ -11,3 +11,4 @@ services:
     working_dir: /app
     stdin_open: true
     tty: true
+    command: npm run dev
